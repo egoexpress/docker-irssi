@@ -1,0 +1,13 @@
+version: "3.3" 
+
+services:
+  app:
+    image: irssi:1.2.2
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - data:/home/user/.irssi
+
+volumes:
+  data:
